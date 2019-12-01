@@ -23,11 +23,14 @@ function formattedDateTime(givenDate){
     let minute = givenDate.getMinutes();
     let seconds = givenDate.getSeconds();
     
+    month = givenDate.getMonth() + 1;
+    if(month > 12)month=1;
     if( (givenDate.getMonth()+1) < 10 ) month = "0" + month;
     if( (givenDate.getDate()) < 10 ) day = "0" + day;
     if( (givenDate.getHours()) < 10 ) hour = "0" + hour;
     if( (givenDate.getMinutes()) < 10 ) minute = "0" + minute;
     if( (givenDate.getSeconds()) < 10 ) seconds = "0" + seconds;
+	
     let formattedDateTime = day+"."+month+"."+year+" "+hour+":"+minute+":"+seconds;
     return formattedDateTime;
   }
