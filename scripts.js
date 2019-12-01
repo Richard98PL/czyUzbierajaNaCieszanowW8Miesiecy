@@ -64,7 +64,7 @@ function convertMilisecondsAndSetTime(miliseconds, format) {
         document.getElementById("ileZostalo").innerHTML += "Godzin : " + hours.toString().fontcolor("yellow") + "<br />";
         document.getElementById("ileZostalo").innerHTML += "Minut : " + minutes.toString().fontcolor("yellow") + "<br />";
         document.getElementById("ileZostalo").innerHTML += "Sekund : " + seconds.toString().fontcolor("yellow") + "<br />"; 
-        document.getElementById("ileZostalo").innerHTML += "Oznacza to, że od dzisiaj musi zacząć odkładać <br />";
+        document.getElementById("ileZostalo").innerHTML += "Oznacza to, że od dzisiaj trzeba zacząć odkładać <br />";
         document.getElementById("ileZostalo").innerHTML += ((170/(days/7)).toFixed(2) + "PLN").fontcolor("red") + " tygodniowo. ";
 
   }
