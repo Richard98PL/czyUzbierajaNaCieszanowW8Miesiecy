@@ -27,7 +27,7 @@ function formattedDateTime(givenDate){
     if( (givenDate.getDate()) < 10 ) day = "0" + day;
     if( (givenDate.getHours()) < 10 ) hour = "0" + hour;
     if( (givenDate.getMinutes()) < 10 ) minute = "0" + minute;
-    if( (givenDate.getSeconds()+1) < 10 ) seconds = "0" + seconds;
+    if( (givenDate.getSeconds()) < 10 ) seconds = "0" + seconds;
     let formattedDateTime = day+"."+month+"."+year+" "+hour+":"+minute+":"+seconds;
     return formattedDateTime;
   }
